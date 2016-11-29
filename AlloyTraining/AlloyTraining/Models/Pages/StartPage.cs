@@ -23,5 +23,11 @@ namespace AlloyTraining.Models.Pages
             Order = 0)]
         public virtual string Heading { get; set; }
 
+
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 300)]
+        public virtual ContentArea MainContentArea { get; set; }
+
     }
 }

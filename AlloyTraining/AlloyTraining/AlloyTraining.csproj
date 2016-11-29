@@ -228,6 +228,8 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
+    <Compile Include="Business\Channels\MobileChannel.cs" />
+    <Compile Include="Business\Channels\MobileResolution.cs" />
     <Compile Include="Business\ContentExtensions.cs" />
     <Compile Include="Business\ExtensionMethods.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
@@ -249,6 +251,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ClientResources\" />
     <Folder Include="Helpers\" />
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Properties\" />
@@ -279,6 +282,9 @@
     <Content Include="Views\Shared\Navigation.cshtml" />
     <Content Include="Views\Shared\PagePartials\PagePartial.cshtml" />
     <Content Include="Views\Shared\PagePartials\PagePartialWide.cshtml" />
+    <Content Include="module.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

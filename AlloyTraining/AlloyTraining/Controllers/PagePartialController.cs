@@ -9,6 +9,7 @@ using AlloyTraining.Models.Pages;
 
 namespace AlloyTraining.Controllers
 {
+    [TemplateDescriptor(Inherited = true)]
     public class PagePartialController : PartialContentController<SitePageData>
     {
         public override ActionResult Index(SitePageData currentPage)

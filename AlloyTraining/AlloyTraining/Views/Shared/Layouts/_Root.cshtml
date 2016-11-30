@@ -10,14 +10,14 @@
 
 <html>
 <head>
-    <title>@Model.CurrentPage.Name</title>
+    <title>@Model.CurrentPage.PageName</title>
     <link rel="stylesheet" href="@Url.Content("~/Static/css/bootstrap.css")" />
     <link rel="stylesheet" href="@Url.Content("~/Static/css/bootstrap-responsive.css")" />
     <link rel="stylesheet" href="@Url.Content("~/Static/css/media.css")" />
     <link rel="stylesheet" href="@Url.Content("~/Static/css/style.css")" />
     <link rel="stylesheet" href="@Url.Content("~/Static/css/editmode.css")" />
-    <script rel="text/javascript" src="@Url.Content("~/Static/js/jquery.js")"></script>
-    <script rel="text/javascript" src="@Url.Content("~/Static/js/bootstrap.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Static/js/jquery.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Static/js/bootstrap.js")"></script>
 </head>
 <body>
     @* Renders quick naviation in top right corner*@
@@ -37,6 +37,9 @@
         </div>
         <hr />
         @RenderBody()
+        @{
+            Html.RenderPartial("Footer", new FooterModel(Model.CurrentPage));
+        }
     </div>
 </body>
 </html>

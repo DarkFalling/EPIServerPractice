@@ -29,5 +29,10 @@ namespace AlloyTraining.Models.Pages
             Order = 300)]
         public virtual ContentArea MainContentArea { get; set; }
 
+        [Display(
+            GroupName = SystemTabNames.Settings,
+            Order = 100)]
+        public virtual PageReference SearchPageLink { get; set; }
+
     }
 }

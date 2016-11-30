@@ -241,6 +241,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Blocks\EditorialBlock.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
@@ -253,7 +254,6 @@
   <ItemGroup>
     <Folder Include="ClientResources\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Properties\" />
     <Folder Include="Static\css\" />
     <Folder Include="Static\gfx\" />
@@ -285,6 +285,7 @@
     <Content Include="module.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\Shared\EditorialBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
